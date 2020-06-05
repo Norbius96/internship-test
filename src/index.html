@@ -17,18 +17,20 @@
         </button>
       <!-- Display success message below -->
 
-    <div class="popup">
-        <i class="far fa-times-circle 5x"></i>
-        <h1>Login</h1>
-        <form action="">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <div class="checkbox-terms">
-                <input type="checkbox" name="terms" id="terms">
-                <label for="terms">I agree to terms & conditions</label>
-            </div>
-            <button>Submit</button>
-        </form>
+    <div class="popup" id="popup">
+        <i class="fas fa-times-circle" id="close"></i>
+        <div class="popup-container">
+            <h1>Login</h1>
+            <form action="">
+                <input type="email" placeholder="Email" id="mail">
+                <input type="password" placeholder="Password" id="password">
+                <div class="checkbox-terms">
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">I agree to terms & conditions</label>
+                </div>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
     </div>
 </section>
     <script src="js/index.min.js" charset="utf-8"></script>
