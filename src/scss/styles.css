@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+html,
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(-45deg, #fcaf32 0%, #fc888e 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.btn-main {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: "Lobster", cursive;
+  font-size: 42px;
+  height: 60px;
+  outline: none;
+  padding: 0 20px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.btn-main:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 25px 5px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20%;
+  background-color: white;
+  z-index: 10;
+  border-radius: 3px;
+}
+
+.popup i {
+  font-size: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.popup h1 {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+}
+
+.popup form {
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+.popup form input {
+  padding: 3px 10px;
+  margin: 10px 0px;
+  height: 30px;
+  border: 1px solid #0f0f0f;
+}
+
+.popup form .checkbox-terms {
+  padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.popup form .checkbox-terms input[type="checkbox"] {
+  width: 15px;
+  margin: 0px 5px;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+.popup form .checkbox-terms label {
+  color: #7c7b7b;
+  font-size: 12px;
+}
+
+.popup form button {
+  height: 35px;
+  margin: 10px 0px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */
