@@ -38,7 +38,17 @@ const validationForm = (e) => {
         setTimeout(() => {
             popupContainer.classList.remove('shake');
         }, 1000);
+    } else {
+        setTimeout(() => {
+            mail.value = "";
+            password.value = "";
+            checkbox.checked = false;
+            popup.style.display = 'none';
+            clickMe.innerHTML = 'Thank you!';
+            clickMe.style.display = 'inline';
+        }, 3000)
     }
+
 }
 
 
