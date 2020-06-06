@@ -2,26 +2,21 @@
 
 const clickMe = document.getElementById('show-popup-form');
 const popup = document.querySelector('#popup');
-
-
-
-clickMe.addEventListener('click', () => showPopup());
-
+// Wyskakujący Popup z formularzem
 const showPopup = () => {
     clickMe.style.display = 'none';
     popup.style.display = 'inline';
 }
+clickMe.addEventListener('click', showPopup);
 
-
+// Zamknięcie formularza po kliknięciu X
 const close = document.querySelector('#close');
-
 close.addEventListener('click', () => {
     popup.style.display = 'none';
     clickMe.style.display = 'inline';
 });
 
-
-
+//pobranie pól formularza do walidacji
 const form = document.querySelector('form');
 const popupContainer = document.querySelector('.popup-container');
 const mail = document.querySelector('#mail');
@@ -29,8 +24,7 @@ const password = document.querySelector('#password');
 const checkbox = document.querySelector('#terms');
 const submitButton = document.querySelector('#submit');
 
-form.addEventListener('submit', (e) => validationForm(e));
-
+//walidacja formularza
 const validationForm = (e) => {
     e.preventDefault();
     if (mail.value === '' || password.value === '' || checkbox.checked === false) {
@@ -50,5 +44,4 @@ const validationForm = (e) => {
     }
 
 }
-
-
+form.addEventListener('submit', validationForm);
